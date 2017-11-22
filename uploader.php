@@ -3,8 +3,8 @@
 <body>
 <p> file uploader </p>
 <?php
-$updir="./upload/";
-$filename = $_FILES['upfile']['name'];
+updir="./upload/";
+filename = $_FILES['upfile']['name'];
 if(move_uploaded_file($_FILES['upfile']['tmp_name'],$updir.$filename)==FALSE){
 print("Upload failed");
 print($_FILES['upfile']['error']);
